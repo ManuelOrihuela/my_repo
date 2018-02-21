@@ -7,7 +7,12 @@
 			var num = document.getElementById("n1");
 			num.value = Math.pow(num.value, 3);
 			}
-
+			function sin() {
+			var num = document.getElementById("n1");
+			angulo = Number(num);
+			rad = (Math.PI/180)*angulo;
+			num.value = Math.sin(angulo);
+			}
 		</script>
 	</head>
 
@@ -16,7 +21,7 @@
 		Number:
 		<input type="text" id="n1"><p>
 		<button onclick="cube()"> x^3 </button>
-
+		<button onclick="sin()"> Seno </button>
 	</body>
 
 </html>
